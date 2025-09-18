@@ -1,0 +1,104 @@
+# MNIST Classification with Neural Networks
+
+A comprehensive implementation of neural networks for MNIST digit classification, featuring both from-scratch and Keras implementations.
+
+## Overview
+
+This project demonstrates two approaches to classifying the MNIST dataset (handwritten digits):
+1. A neural network built from scratch using NumPy
+2. A neural network implemented using Keras/TensorFlow
+
+## Features
+
+- **From-Scratch Implementation**: Custom neural network built with NumPy
+- **Keras Implementation**: High-level API implementation with TensorFlow backend
+- **Data Preprocessing**: MNIST data loading and normalization
+- **Visualization**: Training progress and results visualization
+- **Performance Comparison**: Compare both implementations
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/meli20002/classification_with_nn.git
+cd classification_with_nn
+```
+
+2. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Project Structure
+
+```
+├── mnist_from_scratch.py    # Neural network implementation from scratch
+├── mnist_keras.py           # Neural network implementation using Keras
+├── utils.py                 # Helper functions for data loading and visualization
+├── requirements.txt         # Project dependencies
+├── results/                 # Training results and visualizations
+└── README.md               # This file
+```
+
+## Usage
+
+### From-Scratch Implementation
+
+Run the NumPy-based neural network:
+```bash
+python mnist_from_scratch.py
+```
+
+This implementation includes:
+- Custom neural network class
+- Forward and backward propagation
+- Gradient descent optimization
+- Activation functions (sigmoid, ReLU)
+
+### Keras Implementation
+
+Run the Keras-based neural network:
+```bash
+python mnist_keras.py
+```
+
+This implementation includes:
+- Sequential model definition
+- Various layer types (Dense, Dropout, BatchNormalization)
+- Different optimizers and loss functions
+- Callbacks for model checkpointing and early stopping
+
+## Results
+
+Both implementations achieve strong performance on the MNIST dataset:
+- From-scratch implementation: ~95% accuracy
+- Keras implementation: ~98% accuracy
+
+The repository includes visualizations of:
+- Training/validation accuracy and loss curves
+- Model architecture diagrams
+- Confusion matrices
+- Sample predictions
+
+## Implementation Details
+
+### From-Scratch Neural Network
+- Built using only NumPy
+- Implements forward and backward propagation
+- Supports multiple hidden layers
+- Includes various activation functions
+- Implements mini-batch gradient descent
+
+### Keras Neural Network
+- Uses TensorFlow backend
+- Implements various architectures (MLP, CNN)
+- Includes regularization techniques
+- Supports hyperparameter tuning
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
